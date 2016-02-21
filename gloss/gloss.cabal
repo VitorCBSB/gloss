@@ -36,15 +36,15 @@ Flag ExplicitBackend
   Default:     False
 
 Library
-  Build-Depends: 
-        base       == 4.8.*,
-        ghc-prim   == 0.4.*,
-        containers == 0.5.*,
-        bytestring == 0.10.*,
-        OpenGL     == 2.12.*,
-        GLUT       == 2.7.*,
-        bmp        == 1.2.*,
-        gloss-rendering == 1.10.*
+  Build-Depends:
+        base,
+        ghc-prim,
+        containers,
+        bytestring,
+        OpenGL,
+        GLUT,
+        bmp,
+        gloss-rendering
 
   ghc-options:
         -O2 -Wall
@@ -105,4 +105,3 @@ Library
     CPP-Options: -DWITHGLFW
     Other-modules:
         Graphics.Gloss.Internals.Interface.Backend.GLFW
-
