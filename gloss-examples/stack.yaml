@@ -1,0 +1,7 @@
+resolver: lts-5.3
+packages:
+- ../gloss
+- ../gloss-rendering
+- ../gloss-algorithms
+- ../gloss-raster
+- .

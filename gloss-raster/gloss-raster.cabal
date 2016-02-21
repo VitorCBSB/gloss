@@ -28,12 +28,12 @@ source-repository head
 
 Library
   Build-Depends:
-        base            == 4.8.*,
-        ghc-prim        == 0.4.*,
-        containers      == 0.5.*,
-        repa            == 3.4.*,
-        gloss           == 1.10.*,
-        gloss-rendering == 1.10.*
+        base,
+        ghc-prim,
+        containers,
+        repa,
+        gloss,
+        gloss-rendering
 
   ghc-options:
         -Odph -fno-liberate-case
@@ -41,4 +41,3 @@ Library
   Exposed-modules:
         Graphics.Gloss.Raster.Field
         Graphics.Gloss.Raster.Array
-

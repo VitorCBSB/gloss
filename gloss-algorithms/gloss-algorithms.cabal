@@ -21,11 +21,11 @@ source-repository head
         location:       https://github.com/benl23x5/gloss
 
 Library
-  Build-Depends: 
-        base       == 4.8.*,
-        ghc-prim   == 0.4.*,
-        containers == 0.5.*,
-        gloss      == 1.10.*
+  Build-Depends:
+        base,
+        ghc-prim,
+        containers,
+        gloss
 
   ghc-options:
         -O2 -Wall

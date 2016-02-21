@@ -10,7 +10,7 @@ Stability:           experimental
 Category:            Graphics
 Homepage:            http://gloss.ouroborus.net
 Bug-reports:         gloss@ouroborus.net
-Description:         
+Description:
 	Examples using the gloss graphics library.
         A mixed bag of fractals, particle simulations and cellular automata.
 
@@ -29,10 +29,10 @@ source-repository head
 
 Executable gloss-bitmap
   Build-depends:
-        base            == 4.8.*,
-        bytestring      == 0.10.*,
-        bmp             == 1.2.*,
-        gloss           == 1.10.*
+        base,
+        bytestring,
+        bmp,
+        gloss
   Main-is: Main.hs
   hs-source-dirs: picture/Bitmap
   ghc-options:    -threaded -O2
@@ -40,8 +40,8 @@ Executable gloss-bitmap
 
 Executable gloss-boids
   Build-depends:
-        base            == 4.8.*,
-        gloss           == 1.10.*
+        base,
+        gloss
   Main-is:        Main.hs
   other-modules:  KDTree2d Vec2
   hs-source-dirs: picture/Boids
@@ -49,19 +49,19 @@ Executable gloss-boids
 
 
 Executable gloss-clock
-  Build-depends: 
-        base            == 4.8.*,
-        gloss           == 1.10.*
+  Build-depends:
+        base,
+        gloss
   Main-is:        Main.hs
   hs-source-dirs: picture/Clock
   ghc-options:    -threaded -O2
 
 
 Executable gloss-color
-  Build-depends: 
-        base            == 4.8.*,
-        vector          == 0.10.*,
-        gloss           == 1.10.*
+  Build-depends:
+        base,
+        vector,
+        gloss
   Main-is:        Main.hs
   hs-source-dirs: picture/Color
   ghc-options:    -threaded -O2
@@ -69,10 +69,10 @@ Executable gloss-color
 
 
 Executable gloss-conway
-  Build-depends: 
-        base            == 4.8.*,
-        vector          == 0.10.*,
-        gloss           == 1.10.*
+  Build-depends:
+        base,
+        vector,
+        gloss
   Main-is:        Main.hs
   other-modules:  Cell World
   hs-source-dirs: picture/Conway
@@ -81,8 +81,8 @@ Executable gloss-conway
 
 Executable gloss-draw
   Build-depends:
-        base            == 4.8.*,
-        gloss           == 1.10.*
+        base,
+        gloss
   Main-is:        Main.hs
   hs-source-dirs: picture/Draw
   ghc-options:    -threaded -O2
@@ -90,18 +90,18 @@ Executable gloss-draw
 
 Executable gloss-easy
   Build-depends:
-        base            == 4.8.*,
-        gloss           == 1.10.*
+        base,
+        gloss
   Main-is:        Main.hs
   hs-source-dirs: picture/Easy
   ghc-options:    -threaded -O2
 
 
 Executable gloss-eden
-  Build-depends: 
-        base            == 4.8.*,
-        random          == 1.1.*,
-        gloss           == 1.10.*
+  Build-depends:
+        base,
+        random,
+        gloss
   Main-is:        Main.hs
   other-modules:  Cell Community World
   hs-source-dirs: picture/Eden
@@ -110,36 +110,36 @@ Executable gloss-eden
 
 Executable gloss-flake
   Build-depends:
-        base            == 4.8.*,
-        gloss           == 1.10.*
+        base,
+        gloss
   Main-is:        Main.hs
   hs-source-dirs: picture/Flake
   ghc-options:    -threaded -O2
 
 
 Executable gloss-gameevent
-  Build-depends: 
-        base            == 4.8.*,
-        gloss           == 1.10.*
+  Build-depends:
+        base,
+        gloss
   Main-is:        Main.hs
   hs-source-dirs: picture/GameEvent
   ghc-options:    -threaded -O2
 
 
 Executable gloss-hello
-  Build-depends: 
-        base            == 4.8.*, 
-        gloss           == 1.10.*
+  Build-depends:
+        base,
+        gloss
   Main-is:        Main.hs
   hs-source-dirs: picture/Hello
   ghc-options:    -threaded -O2
 
 
 Executable gloss-lifespan
-  Build-depends: 
-        base            == 4.8.*, 
-        gloss           == 1.10.*,
-        random          == 1.1.*
+  Build-depends:
+        base,
+        gloss,
+        random
   Main-is:        Main.hs
   other-modules:  Cell Community World
   hs-source-dirs: picture/Lifespan
@@ -147,17 +147,17 @@ Executable gloss-lifespan
 
 
 Executable gloss-machina
-  Build-depends: 
-        base            == 4.8.*, 
+  Build-depends:
+        base            == 4.8.*,
         gloss           == 1.10.*
   Main-is:        Main.hs
   hs-source-dirs: picture/Machina
   ghc-options:    -threaded -O2
- 
+
 
 Executable gloss-occlusion
-  Build-depends: 
-        base             == 4.8.*, 
+  Build-depends:
+        base             == 4.8.*,
         gloss            == 1.10.*,
         gloss-algorithms == 1.10.*
   Main-is: Main.hs
@@ -167,7 +167,7 @@ Executable gloss-occlusion
 
 
 Executable gloss-styrene
-  Build-depends: 
+  Build-depends:
         base            == 4.8.*,
         ghc-prim        == 0.4.*,
         containers      == 0.5.*,
@@ -179,8 +179,8 @@ Executable gloss-styrene
 
 
 Executable gloss-tree
-  Build-depends: 
-        base            == 4.8.*, 
+  Build-depends:
+        base            == 4.8.*,
         gloss           == 1.10.*
   Main-is:        Main.hs
   hs-source-dirs: picture/Tree
@@ -188,19 +188,19 @@ Executable gloss-tree
 
 
 Executable gloss-visibility
-  Build-depends: 
-        base            == 4.8.*, 
-        vector          == 0.10.*,
+  Build-depends:
+        base            == 4.8.*,
+        vector,
         gloss           == 1.10.*
   Main-is:        Main.hs
   other-modules:  Draw Interface State World Geometry.Randomish Geometry.Segment
-  hs-source-dirs: picture/Visibility 
+  hs-source-dirs: picture/Visibility
   ghc-options:    -threaded -O2
 
 
 Executable gloss-zen
-  Build-depends: 
-        base            == 4.8.*, 
+  Build-depends:
+        base            == 4.8.*,
         gloss           == 1.10.*
   Main-is:        Main.hs
   hs-source-dirs: picture/Zen
@@ -219,7 +219,7 @@ Executable gloss-crystal
         PatternGuards
         BangPatterns
 
-  ghc-options:    
+  ghc-options:
         -Wall -threaded -rtsopts -eventlog
         -Odph -fno-liberate-case
         -funfolding-use-threshold1000
@@ -229,7 +229,7 @@ Executable gloss-crystal
   ghc-options:
         -fllvm -optlo-O3
 
-        
+
 
 Executable gloss-ray
   Build-depends:
@@ -239,7 +239,7 @@ Executable gloss-ray
   Main-is:        Main.hs
   other-modules:  Light Object Trace Vec3 World
   hs-source-dirs: raster/Ray
-  ghc-options:    
+  ghc-options:
         -Wall -threaded -rtsopts -eventlog
         -Odph -fno-liberate-case
         -funfolding-use-threshold1000
@@ -272,7 +272,7 @@ Executable gloss-wave
   Build-depends:
         base           == 4.8.*,
         ghc-prim       == 0.4.*,
-        vector         == 0.10.*,
+        vector,
         gloss          == 1.10.*,
         gloss-raster   == 1.10.*
   Main-is:        Main.hs
@@ -292,13 +292,13 @@ Executable gloss-fluid
   Build-depends:
         base            == 4.8.*,
         ghc-prim        == 0.4.*,
-        vector          == 0.10.*,
+        vector,
         repa            == 3.4.*,
         repa-io         == 3.4.*,
         repa-algorithms == 3.4.*,
         gloss           == 1.10.*
   Main-is:        Main.hs
-  other-modules:  
+  other-modules:
         Args Config FieldElt Model UserEvent
         Solve.Density   Solve.Velocity
         Stage.Advection Stage.Boundary Stage.Diffusion
@@ -318,7 +318,7 @@ Executable gloss-fluid
   ghc-options:
         -fllvm -optlo-O3
 
-        
+
 
 Executable gloss-snow
   Build-depends:
@@ -384,4 +384,3 @@ Executable gloss-render
   hs-source-dirs: picture/Render
   ghc-options:
         -Wall -O2
-
